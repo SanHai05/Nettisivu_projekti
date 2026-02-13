@@ -1,0 +1,80 @@
+body {
+    font-family:"ADLaM Display", sans-serif;
+}
+
+/*Navigaation asetteluja */
+
+.navbar {
+    height: 56px;            
+    min-height: 56px;         
+}
+
+.navbar-brand {
+    font-size: 1.5rem;       
+    line-height: 40px;       
+    padding: 0;               
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem; 
+    line-height: 40px;        
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid black; 
+    padding-bottom: 0.5px;
+}
+
+/* Ei-aktiiviset nav-linkit harmaaksi */
+.nav-link:not(.active) {
+    color: #636363 !important;
+}
+
+/* Valinnainen: hover-efekti */
+.nav-link:not(.active):hover {
+    color:black !important;
+}
+
+
+
+
+/* Offcanvas mobiili */
+.offcanvas-body {
+    width: 90vw;           
+    max-width: 350px;        
+    min-height: 100vh;
+    background-color: white;
+    padding-left: 1rem;      
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: flex-start;
+          
+}
+
+.offcanvas-body nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -10rem; 
+}
+
+.offcanvas-body .nav-link {
+    color: #636363;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.offcanvas-body .nav-link.active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.offcanvas-body .nav-link:not(.active):hover {
+    color:black;
+}
+
