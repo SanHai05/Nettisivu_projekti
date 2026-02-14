@@ -1,8 +1,18 @@
-body {
-    font-family:"ADLaM Display", sans-serif;
+html, body {
+    height: 100%;
 }
 
+
+body {
+    padding-top: 56px;
+    font-family:"ADLaM Display", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*Navigaation asetteluja */
+
 
 .navbar {
     height: 56px;            
@@ -24,7 +34,7 @@ body {
 
 .nav-link.active {
     border-bottom: 2px solid black; 
-    padding-bottom: 0.5px;
+    padding-bottom: -2px;
 }
 
 /* Ei-aktiiviset nav-linkit harmaaksi */
@@ -76,5 +86,19 @@ body {
 
 .offcanvas-body .nav-link:not(.active):hover {
     color:black;
+}
+
+
+
+
+/*ALAPALKKI*/
+
+footer {
+    margin-top: auto; 
+}
+
+footer {
+    font-family: 'arial';
+    color: #636363;
 }
 
