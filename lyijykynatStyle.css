@@ -1,0 +1,119 @@
+/* YLEISET TYYLIT (Kaikille laitteille)*/
+
+.page-title-box {
+    color: white !important;
+    background-color: #212529 !important; 
+    padding: 25px 40px !important;  
+    display: block !important;
+    width: fit-content !important;
+    white-space: nowrap;
+    max-width: 100%;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+}
+
+.year {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #636363;
+}
+
+/* Kuvien A4-pystykuvasuhde (Harry, Louis, Dylan, Silmä mobiilissa) */
+.a4-aspect {
+    aspect-ratio: 1 / 1.414;
+    object-fit: cover;
+    width: 100%;
+}
+.a4-aspect-horizontal {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.414 / 1; /* A4-vaaka kuvasuhde */
+    object-fit: cover;
+    display: block;
+}
+
+
+.gallery-item img {
+    transition: transform 0.3s ease-in-out !important;
+}
+
+
+.gallery-item a:hover img {
+    transform: scale(1.05);
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+/* Pakotetaan navigointielementit näkyviin */
+.glightbox-container .gbtn {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Varmistetaan, että nuoli-ikonit (SVG) ovat valkoisia ja näkyviä */
+.glightbox-container .gbtn svg path {
+    fill: #ffffff !important;
+}
+
+/*TIETOKONENÄKYMÄ (992px ja yli) */
+
+@media (min-width: 992px) {
+
+    .sidebar {
+        padding-top: 150px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-title-box {
+        font-size: 2.8rem;
+        text-align: left;
+    }
+}
+
+/* MOBIILI- JA IPAD-NÄKYMÄ (alle 991px) */
+
+@media (max-width: 991px) {
+    /* Pakotetaan Bootstrapin containeriin kunnon välit sivuille */
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+.row.mt-4.g-3 {
+        align-items: end; 
+    }
+
+    .page-title-box {
+        display: block !important; /* Täyttää leveyden mobiilissa */
+        text-align: center !important;
+        width: 100% !important;
+        font-size: 1.8rem;
+        padding: 20px !important;
+        margin: 0 0 30px 0 !important;
+    }
+
+    .sidebar {
+        padding-top: 0 !important; /* Poistaa tietokoneen tyhjän tilan */
+    }
+
+    /* Varmistetaan, että iso kuva ja grid-kuvat eivät liimaudu toisiinsa */
+    .big-img-container {
+        margin-top: 10px;
+    }
+}
+
+
+/* APULUOKAT (Varmuuden vuoksi) */
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
