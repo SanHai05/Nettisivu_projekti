@@ -1,0 +1,20 @@
+/* Taulukon solujen korkeus ja keskitys */
+.custom-table th, .custom-table td {
+    padding: 1rem !important;
+    vertical-align: middle;
+}
+
+/* Poistetaan Bootstrapin oletusmarginaali taulukon alta */
+.custom-table {
+    height: 100%;
+}
+
+/* Linkin väri mustassa laatikossa */
+.bg-dark a {
+    color: #c0c0c0 !important;
+    text-decoration: underline;
+}
+
+.bg-dark a:hover {
+    color: #636363 !important;
+}
