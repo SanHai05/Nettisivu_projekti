@@ -1,0 +1,78 @@
+/* Varmistetaan että kuvat ovat tasakokoisia galleriassa */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Jos haluat tekstilaatikon tekstistä hieman kapeamman ja helpommin luettavan 
+   kuten kuvassa, voit lisätä tämän: */
+.process-text {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* Valkoisen raon korostus, jos haluat käyttää sitä yläpalkin ja sisältöruudun välissä */
+.border-white {
+    border-color: #ffffff !important;
+}
+
+/* Pakotetaan kuvat A4-suhteeseen (pysty) */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Pitää kuvan täyttävänä ilman vääristymistä */
+    aspect-ratio: 1 / 1.414; /* A4 pysty */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Vuosilukutekstin tyyli (valinnainen, jos haluat säätää fonttia) */
+.gallery-item p {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.gallery-item a:hover .gallery-img {
+    transform: scale(1.05);
+    z-index: 10;
+    cursor: pointer;
+}
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+/* Pakotetaan navigointielementit näkyviin */
+.glightbox-container .gbtn {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Varmistetaan, että nuoli-ikonit (SVG) ovat valkoisia ja näkyviä */
+.glightbox-container .gbtn svg path {
+    fill: #ffffff !important;
+}
+
+/* Mobiilikohtaiset säädöt, jotta ne mahtuvat ruudulle */
+@media (max-width: 768px) {
+    .glightbox-container .gnext, 
+    .glightbox-container .gprev {
+        background-color: rgba(0, 0, 0, 0.5); /* Lisätään tumma tausta nuolen alle, jotta se erottuu */
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .glightbox-container .gprev {
+        left: 5px !important;
+    }
+
+    .glightbox-container .gnext {
+        right: 5px !important;
+    }
+}
