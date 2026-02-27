@@ -1,0 +1,17 @@
+
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+/* Lisää tämä style.css tiedostoon */
+.custom-link {
+    color: #c0c0c0 !important; /* Erittäin vaaleanharmaa */
+    text-decoration: underline;
+}
+
+.custom-link:hover {
+    color: #636363 !important; /* Muuttuu täysin valkoiseksi kun hiiri on päällä */
+}
