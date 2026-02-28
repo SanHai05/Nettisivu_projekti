@@ -16,7 +16,7 @@
     text-align: center;
     margin-top: 10px;
     font-size: 1.1rem;
-    color: #636363;
+    color: dark;
 }
 
 /* Kuvien A4-pystykuvasuhde (Harry, Louis, Dylan, Silmä mobiilissa) */
@@ -116,4 +116,5 @@
 .img-fluid {
     max-width: 100%;
     height: auto;
+
 }
