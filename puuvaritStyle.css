@@ -56,6 +56,17 @@
     fill: #ffffff !important;
 }
 
+/* Piilottaa seuraava-nuolen, kun ollaan viimeisessä kuvassa (jos loop: false) */
+.gnext.disabled {
+    display: none !important;
+}
+
+/* Piilottaa edellinen-nuolen, kun ollaan ensimmäisessä kuvassa */
+.gprev.disabled {
+    display: none !important;
+}
+
+
 /* Mobiilikohtaiset säädöt, jotta ne mahtuvat ruudulle */
 @media (max-width: 768px) {
     .glightbox-container .gnext, 
@@ -75,4 +86,5 @@
     .glightbox-container .gnext {
         right: 5px !important;
     }
+
 }
